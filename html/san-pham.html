@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm | Tiechs Store</title>
+    <!-- Nhúng Bootstrap 5 đồng bộ với trang chủ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nhúng file CSS tùy chỉnh -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-light">
+
+    <!-- NAVBAR (Đồng bộ với Trang Chủ) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="../index.html">TIECHS STORE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gioi-thieu.html">Giới Thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link active text-warning" href="san-pham.html">Sản Phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lien-he.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER SẢN PHẨM -->
+    <header class="bg-dark text-white text-center py-5" style="margin-top: 56px; background: linear-gradient(135deg, #000, #222) !important;">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold text-warning mb-3">BỘ SƯU TẬP 36 MÙI HƯƠNG</h1>
+            <p class="lead">Khám phá thế giới mùi hương đẳng cấp tại Tiechs Store</p>
+        </div>
+    </header>
+
+    <!-- THANH TÌM KIẾM -->
+    <section class="py-4 bg-white shadow-sm mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text bg-warning text-dark border-0">🔍</span>
+                        <input type="text" id="searchInput" class="form-control border-1" placeholder="Tìm kiếm mùi hương bạn yêu thích...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KHU VỰC NƯỚC HOA NAM (13 MÙI HƯƠNG) -->
+    <section class="container mb-5">
+        <div class="border-start border-warning border-4 ps-3 mb-4">
+            <h2 class="fw-bold text-dark mb-0">NƯỚC HOA NAM (13 MÙI HƯƠNG)</h2>
+            <p class="text-secondary mb-0">Mạnh mẽ, lịch lãm và cuốn hút</p>
+        </div>
+        
+        <!-- Đã sửa thành row-cols-2 (Mobile) và row-cols-lg-5 (Máy tính hiển thị 5 cột) -->
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+            <!-- LD01 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld01.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD01 Creed Aventus</h5>
+                            <p class="text-muted small mb-2">Quyền lực - Sang trọng</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD02 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld02.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD02 Ultra Male</h5>
+                            <p class="text-muted small mb-2">Ngọt ngào - Cuốn hút</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD03 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld03.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD03 212 VIP Men</h5>
+                            <p class="text-muted small mb-2">Hiện đại - Lịch lãm</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD04 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld04.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD04 Bleu De Chanel</h5>
+                            <p class="text-muted small mb-2">Thanh lịch - Nam tính</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD05 -->
+            <div class="col position-relative">
+                <div class="card h-100 shadow-sm border-0">
+                    <span class="position-absolute top-0 start-0 bg-warning text-dark fw-bold px-2 py-1 small rounded-bottom-right" style="z-index: 2;">Best</span>
+                    <img src="../assets/images/ld05.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD05 Dior Sauvage</h5>
+                            <p class="text-muted small mb-2">Best Seller Nam</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD06 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld06.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD06 Bvlgari Aqva</h5>
+                            <p class="text-muted small mb-2">Hương biển mát lạnh</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD07 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld07.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD07 Polo Blue</h5>
+                            <p class="text-muted small mb-2">Thể thao - Tươi mát</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD08 -->
+            <div class="col position-relative">
+                <div class="card h-100 shadow-sm border-0">
+                    <span class="position-absolute top-0 start-0 bg-warning text-dark fw-bold px-2 py-1 small rounded-bottom-right" style="z-index: 2;">Best</span>
+                    <img src="../assets/images/ld08.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD08 Acqua Di Gio</h5>
+                            <p class="text-muted small mb-2">Best Seller Nam</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD09 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld09.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD09 Allure Homme Sport</h5>
+                            <p class="text-muted small mb-2">Năng động - Trẻ trung</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD10 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld10.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD10 Jazz Club</h5>
+                            <p class="text-muted small mb-2">Cổ điển - Trầm ấm</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD11 -->
+            <div class="col position-relative">
+                <div class="card h-100 shadow-sm border-0">
+                    <span class="position-absolute top-0 start-0 bg-warning text-dark fw-bold px-2 py-1 small rounded-bottom-right" style="z-index: 2;">Best</span>
+                    <img src="../assets/images/ld11.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD11 Versace Eros</h5>
+                            <p class="text-muted small mb-2">Best Seller Nam</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD12 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld12.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD12 Light Blue Intense</h5>
+                            <p class="text-muted small mb-2">Mát lạnh mùa hè</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD13 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld13.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD13 YSL Y EDP</h5>
+                            <p class="text-muted small mb-2">Thanh mát - Cuốn hút</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KHU VỰC NƯỚC HOA NỮ (23 MÙI HƯƠNG) -->
+    <section class="container mb-5">
+        <div class="border-start border-warning border-4 ps-3 mb-4">
+            <h2 class="fw-bold text-dark mb-0">NƯỚC HOA NỮ (23 MÙI HƯƠNG)</h2>
+            <p class="text-secondary mb-0">Dịu dàng, quyến rũ và kiêu sa</p>
+        </div>
+        
+        <!-- Đã sửa thành row-cols-2 (Mobile) và row-cols-lg-5 (Máy tính hiển thị 5 cột) -->
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+            <!-- LD14 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld14.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD14 Bombshell</h5>
+                            <p class="text-muted small mb-2">Trẻ trung - Đáng yêu</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD15 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld15.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD15 Gucci Flora</h5>
+                            <p class="text-muted small mb-2">Nữ tính - Dịu dàng</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD16 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld16.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD16 Yellow Diamond</h5>
+                            <p class="text-muted small mb-2">Sang trọng nhẹ nhàng</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD17 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld17.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD17 Good Girl</h5>
+                            <p class="text-muted small mb-2">Gợi cảm - Cá tính</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD18 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld18.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD18 Scandal</h5>
+                            <p class="text-muted small mb-2">Quyến rũ - Táo bạo</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD19 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld19.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD19 Narciso Cristal</h5>
+                            <p class="text-muted small mb-2">Cuốn hút - Thanh lịch</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD20 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld20.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD20 Cinema</h5>
+                            <p class="text-muted small mb-2">Cổ điển - Kiêu kỳ</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD21 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld21.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD21 My Burberry</h5>
+                            <p class="text-muted small mb-2">Trong trẻo - Tươi mới</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD22 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld22.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD22 Chanel No.5</h5>
+                            <p class="text-muted small mb-2">Huyền thoại - Sang trọng</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD23 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld23.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD23 Dior Jadore</h5>
+                            <p class="text-muted small mb-2">Kiêu sa - Tôn vinh</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD24 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld24.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD24 Tom Ford Rose Prick</h5>
+                            <p class="text-muted small mb-2">Kiêu kỳ - Quyến rũ</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">220.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD25 -->
+            <div class="col position-relative">
+                <div class="card h-100 shadow-sm border-0">
+                    <span class="position-absolute top-0 start-0 bg-warning text-dark fw-bold px-2 py-1 small rounded-bottom-right" style="z-index: 2;">Best</span>
+                    <img src="../assets/images/ld25.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD25 La Vie Est Belle</h5>
+                            <p class="text-muted small mb-2">Best Seller Nữ</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD26 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld26.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD26 Chloe Love</h5>
+                            <p class="text-muted small mb-2">Thuần khiết - Nhẹ nhàng</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD27 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld27.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD27 Versace Bright Crystal</h5>
+                            <p class="text-muted small mb-2">Ngọt ngào - Trong trẻo</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD28 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld28.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD28 Creed Wind Flowers</h5>
+                            <p class="text-muted small mb-2">Quý phái - Gió xuân</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">220.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD29 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld29.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD29 Gucci Bloom</h5>
+                            <p class="text-muted small mb-2">Vườn hoa huệ trắng</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD30 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld30.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD30 Le Labo Rose 31</h5>
+                            <p class="text-muted small mb-2">Gỗ và Hoa hồng mộc mạc</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">220.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD31 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld31.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD31 Jo Malone English Pear</h5>
+                            <p class="text-muted small mb-2">Thanh mát - Quả lê đầu thu</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">199.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD32 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld32.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD32 Coco Mademoiselle</h5>
+                            <p class="text-muted small mb-2">Quý cô nước Pháp</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">220.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD33 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld33.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD33 Black Opium</h5>
+                            <p class="text-muted small mb-2">Ma mị - Quyến rũ</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">220.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD34 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld34.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD34 Le Labo Santal 33</h5>
+                            <p class="text-muted small mb-2">Mộc mạc - Đẳng cấp</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">220.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD35 -->
+            <div class="col position-relative">
+                <div class="card h-100 shadow-sm border-0">
+                    <span class="position-absolute top-0 start-0 bg-warning text-dark fw-bold px-2 py-1 small rounded-bottom-right" style="z-index: 2;">Best</span>
+                    <img src="../assets/images/ld35.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD35 Baccarat Rouge 540</h5>
+                            <p class="text-muted small mb-2">Best Seller Nữ</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">220.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LD36 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="../assets/images/ld36.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=300'">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-dark fs-6 mb-1">LD36 Another 13</h5>
+                            <p class="text-muted small mb-2">Đẳng cấp - Tinh tế</p>
+                        </div>
+                        <div>
+                            <p class="text-danger fw-bold mb-3">220.000 VNĐ</p>
+                            <a href="chi-tiet.html" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-secondary py-4 text-center border-top border-secondary">
+        <div class="container">
+            <p class="mb-1 text-white fw-bold">Tiechs Store - Đại lý LD Perfume Oil chính hãng</p>
+            <p class="small mb-0">&copy; 2026 Tiechs Store. Thiết kế bởi Sinh viên TVU.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
