@@ -15,7 +15,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id=\"menu\">
+            <!-- BUG FIX: id="menu" bị escape sai thành id=\"menu\" → đã sửa lại -->
+            <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Trang Chủ</a></li>
                     <li class="nav-item"><a class="nav-link active text-warning" href="gioi-thieu.html">Giới Thiệu</a></li>
@@ -41,23 +42,22 @@
                     <div class="p-3">
                         <h2 class="fw-bold text-dark border-bottom pb-2 mb-3">Về Chúng Tôi</h2>
                         <p class="text-secondary" style="text-align: justify; line-height: 1.8;">
-                            LD Perfume Oil tự hảo là thương hiệu phân phối tinh dầu nước hoa hàng đầu, mang đến giải pháp mùi hương sang trọng, đẳng cấp với giá thành hợp lý nhất. Được chế tác và nhập khẩu nguyên liệu trực tiếp từ các nhà máy hương liệu lớn tại Pháp, mỗi sản phẩm của LD đều đạt chứng nhận an toàn và độ lưu hương vượt trội.
+                            LD Perfume Oil tự hào là thương hiệu phân phối tinh dầu nước hoa hàng đầu, mang đến giải pháp mùi hương sang trọng, đẳng cấp với giá thành hợp lý nhất. Được chế tác và nhập khẩu nguyên liệu trực tiếp từ các nhà máy hương liệu lớn tại Pháp, mỗi sản phẩm của LD đều đạt chứng nhận an toàn và độ lưu hương vượt trội.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <!-- ĐƯỜNG DẪN HÌNH ẢNH TỰ CHỌN CỦA BẠN -->
-                    <!-- Bạn chỉ cần bỏ ảnh của bạn vào thư mục assets/images/ và đổi tên trùng với thuộc tính src bên dưới -->
-                    <img src="../assets/images/gioi-thieu-store.jpg" 
-                         alt="Hình ảnh giới thiệu Tiechs Store" 
-                         class="img-fluid rounded shadow w-100" 
+                    <img src="../assets/images/gioi-thieu-store.jpg"
+                         alt="Hình ảnh giới thiệu Tiechs Store"
+                         class="img-fluid rounded shadow w-100"
                          style="max-height: 400px; object-fit: cover;"
-                         onerror="this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?w=600'">
+                        >
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- HÀNH TRÌNH PHÁT TRIỂN -->
     <section class="py-5 bg-white">
         <div class="container">
             <h2 class="text-center fw-bold text-dark mb-5">Hành Trình Phát Triển</h2>
@@ -87,6 +87,7 @@
         </div>
     </section>
 
+    <!-- TẠI SAO CHỌN LD -->
     <section class="py-5 text-white" style="background-color: #D4AF37;">
         <div class="container">
             <h2 class="text-center fw-bold text-white mb-5">Tại Sao Chọn LD Perfume Oil?</h2>
@@ -119,6 +120,7 @@
         </div>
     </section>
 
+    <!-- NHÀ MÁY & LƯU Ý -->
     <section class="py-5">
         <div class="container">
             <div class="row g-4">
@@ -133,8 +135,9 @@
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm p-4 border-0 border-start border-warning border-4">
                         <h4 class="fw-bold text-danger mb-3">⚠️ Lưu Ý Quan Trọng</h4>
+                        <!-- BUG FIX: **Tiechs Store** là cú pháp Markdown, không hiển thị trong HTML → đổi sang <strong> -->
                         <p class="text-secondary" style="line-height: 1.7;">
-                            Để bảo vệ quyền lợi của chính mình, người tiêu dùng nên mua sản phẩm tại các đại lý chính thức như **Tiechs Store**. Vui lòng kiểm tra kỹ nguồn gốc, tem mã vạch chống giả, số lô sản xuất và thông tin kiểm định được in trên bao bì trước khi sử dụng.
+                            Để bảo vệ quyền lợi của chính mình, người tiêu dùng nên mua sản phẩm tại các đại lý chính thức như <strong>Tiechs Store</strong>. Vui lòng kiểm tra kỹ nguồn gốc, tem mã vạch chống giả, số lô sản xuất và thông tin kiểm định được in trên bao bì trước khi sử dụng.
                         </p>
                     </div>
                 </div>
@@ -142,6 +145,7 @@
         </div>
     </section>
 
+    <!-- CTA -->
     <section class="py-5 text-center bg-black text-white">
         <div class="container py-3">
             <h2 class="fw-bold text-warning mb-3">Sẵn Sàng Khám Phá Thế Giới Mùi Hương?</h2>
@@ -158,5 +162,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

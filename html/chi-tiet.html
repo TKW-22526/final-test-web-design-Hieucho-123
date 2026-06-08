@@ -1,376 +1,260 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Chi Tiết Sản Phẩm | Tiechs Store</title>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
-
+<style>
+  .detail-hero {
+    padding: 120px 0 60px;
+    background-image: url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  .detail-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.60);
+  }
+  .detail-hero .container {
+    position: relative;
+    z-index: 1;
+  }
+  .detail-hero h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: 2px; }
+  .detail-hero p  { font-size: 1.1rem; opacity: 0.85; }
+  .product-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.18);
+    object-fit: cover;
+    max-height: 420px;
+  }
+</style>
 </head>
-
-<body>
 <body>
 
 <!-- NAVBAR -->
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow">
 <div class="container">
-
-<a class="navbar-brand text-warning fw-bold"
-href="../index.html">
-
-TIECHS STORE
-
-</a>
-
-<button class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
-
-<span class="navbar-toggler-icon"></span>
-
-</button>
-
-<div class="collapse navbar-collapse"
-id="menu">
-
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item">
-<a class="nav-link"
-href="../index.html">Trang Chủ</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link"
-href="gioi-thieu.html">Giới Thiệu</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link active"
-href="san-pham.html">Sản Phẩm</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link"
-href="lien-he.html">Liên Hệ</a>
-</li>
-
-</ul>
-
+  <a class="navbar-brand fw-bold text-warning" href="../index.html">TIECHS STORE</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="../index.html">Trang Chủ</a></li>
+      <li class="nav-item"><a class="nav-link" href="gioi-thieu.html">Giới Thiệu</a></li>
+      <li class="nav-item"><a class="nav-link active text-warning" href="san-pham.html">Sản Phẩm</a></li>
+      <li class="nav-item"><a class="nav-link" href="lien-he.html">Liên Hệ</a></li>
+    </ul>
+  </div>
 </div>
-
-</div>
-
 </nav>
 
-<!-- HERO -->
-
+<!-- HERO - background ảnh -->
 <section class="detail-hero">
-
-<div class="container text-center">
-
-<h1>LD05 DIOR SAUVAGE</h1>
-
-<p>
-Mùi hương nam tính bán chạy nhất
-</p>
-
-</div>
-
+  <div class="container">
+    <h1 id="heroTitle">ĐANG TẢI...</h1>
+    <p id="heroTagline"></p>
+  </div>
 </section>
 
-<!-- CHI TIẾT -->
-
+<!-- CHI TIẾT SẢN PHẨM -->
 <section class="py-5">
-
 <div class="container">
+  <div class="row align-items-center g-5">
 
-<div class="row align-items-center">
+    <div class="col-lg-5 text-center">
+      <img id="productImg" src="" class="product-img" alt="Ảnh sản phẩm">
+    </div>
 
-<div class="col-lg-5">
+    <div class="col-lg-7">
+      <h2 class="mb-2" id="productName"></h2>
+      <h3 class="text-warning mb-4" id="productPrice"></h3>
+      <p id="productDesc" class="text-secondary" style="line-height:1.8;"></p>
 
-<img src="../assets/images/ld05.jpg"
-class="img-fluid rounded shadow">
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Mã sản phẩm:</strong> <span id="productCode"></span></li>
+            <li class="list-group-item"><strong>Dung tích:</strong> 12ml</li>
+            <li class="list-group-item"><strong>Loại:</strong> Tinh dầu nước hoa</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Lưu hương:</strong> 12-24h</li>
+            <li class="list-group-item"><strong>Tỏa hương:</strong> 2-5m</li>
+            <li class="list-group-item"><strong>Giới tính:</strong> <span id="productGender"></span></li>
+          </ul>
+        </div>
+      </div>
 
+      <a href="#order" class="btn btn-warning btn-lg mt-4 px-5">CHỐT ĐƠN NGAY 🛒</a>
+    </div>
+
+  </div>
 </div>
-
-<div class="col-lg-7">
-
-<h2 class="mb-3">
-
-LD05 - Dior Sauvage
-
-</h2>
-
-<h3 class="text-warning mb-4">
-
-199.000 VNĐ
-
-</h3>
-
-<p>
-
-Dior Sauvage là một trong những mùi hương nam
-được yêu thích nhất của LD Perfume Oil.
-
-Hương cam Bergamot kết hợp tiêu đen tạo nên
-sự mạnh mẽ, lịch lãm và cuốn hút.
-
-</p>
-
-<div class="row mt-4">
-
-<div class="col-md-6">
-
-<ul class="list-group">
-
-<li class="list-group-item">
-Mã sản phẩm: LD05
-</li>
-
-<li class="list-group-item">
-Dung tích: 12ml
-</li>
-
-<li class="list-group-item">
-Tinh dầu nước hoa
-</li>
-
-</ul>
-
-</div>
-
-<div class="col-md-6">
-
-<ul class="list-group">
-
-<li class="list-group-item">
-Lưu hương: 12-24h
-</li>
-
-<li class="list-group-item">
-Tỏa hương: 2-5m
-</li>
-
-<li class="list-group-item">
-Dành cho Nam
-</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<a href="#order"
-class="btn btn-warning btn-lg mt-4">
-
-CHỐT ĐƠN NGAY
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
 <!-- FORM ĐẶT HÀNG -->
-
-<section id="order" class="order-section">
-
+<section id="order" class="order-section bg-light py-5">
 <div class="container">
-
-<h2 class="text-center mb-5">
-
-THÔNG TIN ĐẶT HÀNG
-
-</h2>
-
-<div class="row justify-content-center">
-
-<div class="col-lg-6">
-
-<form id="orderForm">
-
-<input
-type="text"
-class="form-control mb-3"
-placeholder="Họ và tên"
-required>
-
-<input
-type="tel"
-class="form-control mb-3"
-placeholder="Số điện thoại"
-required>
-
-<input
-type="text"
-class="form-control mb-3"
-placeholder="Địa chỉ nhận hàng"
-required>
-
-<textarea
-class="form-control mb-3"
-rows="4"
-placeholder="Ghi chú"></textarea>
-
-<button
-type="submit"
-class="btn btn-dark w-100">
-
-XÁC NHẬN ĐẶT HÀNG
-
-</button>
-
-</form>
-
+  <h2 class="text-center mb-5 fw-bold">THÔNG TIN ĐẶT HÀNG</h2>
+  <div class="row justify-content-center">
+  <div class="col-lg-6">
+    <form id="orderForm">
+      <input type="text" class="form-control mb-3" placeholder="Họ và tên" required>
+      <input type="tel" class="form-control mb-3" placeholder="Số điện thoại" required>
+      <input type="text" class="form-control mb-3" placeholder="Địa chỉ nhận hàng" required>
+      <input type="text" class="form-control mb-3" id="orderProduct" placeholder="Sản phẩm" readonly>
+      <textarea class="form-control mb-3" rows="3" placeholder="Ghi chú thêm"></textarea>
+      <button type="submit" class="btn btn-dark w-100 py-3 fw-bold">XÁC NHẬN ĐẶT HÀNG</button>
+    </form>
+  </div>
+  </div>
 </div>
-
-</div>
-
-</div>
-
 </section>
 
 <!-- SẢN PHẨM LIÊN QUAN -->
-
-<section class="py-5 bg-light">
-
+<section class="py-5">
 <div class="container">
-
-<h2 class="text-center mb-5">
-
-SẢN PHẨM LIÊN QUAN
-
-</h2>
-
-<div class="row g-4">
-
-<div class="col-md-4">
-
-<div class="card product-card">
-
-<img src="../assets/images/ld01.jpg"
-class="card-img-top">
-
-<div class="card-body text-center">
-
-<h5>LD01 Creed Aventus</h5>
-
-<p>199.000 VNĐ</p>
-
+  <h2 class="text-center fw-bold mb-5">SẢN PHẨM LIÊN QUAN</h2>
+  <div class="row g-4" id="relatedProducts"></div>
+  <div class="text-center mt-4">
+    <a href="san-pham.html" class="btn btn-outline-dark btn-lg px-5">Xem Tất Cả 36 Sản Phẩm</a>
+  </div>
 </div>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card product-card">
-
-<img src="../assets/images/ld11.jpg"
-class="card-img-top">
-
-<div class="card-body text-center">
-
-<h5>LD11 Versace Eros</h5>
-
-<p>199.000 VNĐ</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card product-card">
-
-<img src="../assets/images/ld13.jpg"
-class="card-img-top">
-
-<div class="card-body text-center">
-
-<h5>LD13 YSL Y EDP</h5>
-
-<p>199.000 VNĐ</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
 <!-- POPUP -->
-
 <div class="popup" id="popup">
-
 <div class="popup-content">
-
-<h2>🎉 Cảm Ơn Bạn!</h2>
-
-<p>
-Tiechs Store đã nhận đơn hàng.
-</p>
-
-<button onclick="closePopup()">
-
-Đóng
-
-</button>
-
+  <h2>🎉 Cảm Ơn Bạn!</h2>
+  <p>Tiechs Store đã nhận đơn hàng.<br>Chúng tôi sẽ liên hệ sớm nhất!</p>
+  <button onclick="closePopup()" class="btn btn-dark mt-3 px-4">Đóng</button>
 </div>
-
 </div>
 
 <!-- FOOTER -->
-
 <footer class="bg-black text-white py-4">
-
 <div class="container text-center">
-
-<h3 class="text-warning">
-
-TIECHS STORE
-
-</h3>
-
-<p>
-Đại lý LD Perfume Oil chính hãng
-</p>
-
-<p>
-📞 0337205206
-</p>
-
-<p>
-📧 hdhieu544@gmail.com
-</p>
-
+  <h4 class="text-warning">TIECHS STORE</h4>
+  <p class="mb-1">Đại lý LD Perfume Oil chính hãng</p>
+  <p class="small">📞 0337205206 &nbsp;|&nbsp; 📧 hdhieu544@gmail.com</p>
+  <p class="small mb-0">© 2026 Dương Thành Hiếu</p>
 </div>
-
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../js/script.js"></script>
+<script>
+// ============================================================
+// DATABASE 36 SẢN PHẨM
+// ============================================================
+const products = {
+  ld01: { name:'LD01 Creed Aventus',          price:'199.000 VNĐ', gender:'Nam', tagline:'Quyền lực - Sang trọng',       desc:'Creed Aventus – biểu tượng quyền lực và thành công. Hương cam quýt tươi mát hòa quyện gỗ bạch dương tạo nên phong thái lịch lãm, khẳng định đẳng cấp bản thân.' },
+  ld02: { name:'LD02 Ultra Male',              price:'199.000 VNĐ', gender:'Nam', tagline:'Ngọt ngào - Cuốn hút',          desc:'Hương vanilla ngọt ngào kết hợp gỗ trầm ấm áp tạo nên sức hút khó cưỡng, lý tưởng cho những buổi tối đặc biệt và ấn tượng.' },
+  ld03: { name:'LD03 212 VIP Men',             price:'199.000 VNĐ', gender:'Nam', tagline:'Hiện đại - Lịch lãm',          desc:'Phong cách tiệc đêm thượng lưu. Hương gỗ xạ hương khói nhẹ tạo cảm giác huyền bí, hiện đại – dành cho những quý ông biết thưởng thức.' },
+  ld04: { name:'LD04 Bleu De Chanel',          price:'199.000 VNĐ', gender:'Nam', tagline:'Thanh lịch - Nam tính',        desc:'Thanh lịch và nam tính tuyệt đối. Hương cam bergamot sạch sẽ tinh tế thể hiện phẩm chất người đàn ông hiện đại, tự tin và lịch sự.' },
+  ld05: { name:'LD05 Dior Sauvage',            price:'199.000 VNĐ', gender:'Nam', tagline:'Best Seller Nam',               desc:'Dior Sauvage – một trong những mùi hương nam được yêu thích nhất. Hương cam Bergamot kết hợp tiêu đen tạo nên sự mạnh mẽ, lịch lãm và cuốn hút không thể cưỡng lại.' },
+  ld06: { name:'LD06 Bvlgari Aqva',            price:'199.000 VNĐ', gender:'Nam', tagline:'Hương biển mát lạnh',          desc:'Hương nước biển trong xanh mát lạnh, gợi lên hình ảnh bờ biển Địa Trung Hải xa xôi. Tươi mát và dễ chịu suốt cả ngày dài.' },
+  ld07: { name:'LD07 Polo Blue',               price:'199.000 VNĐ', gender:'Nam', tagline:'Thể thao - Tươi mát',          desc:'Tươi mát và năng động như làn gió biển. Hương cam chanh và gỗ tươi phù hợp cho cả thể thao lẫn dạo phố ngày cuối tuần.' },
+  ld08: { name:'LD08 Acqua Di Gio',            price:'199.000 VNĐ', gender:'Nam', tagline:'Best Seller Nam',               desc:'Acqua Di Gio – hương biển mặn mà hòa quyện gỗ đàn hương dịu dàng. Một trong những mùi hương nam được yêu thích nhất thế giới mọi thời đại.' },
+  ld09: { name:'LD09 Allure Homme Sport',      price:'199.000 VNĐ', gender:'Nam', tagline:'Năng động - Trẻ trung',        desc:'Năng động và trẻ trung, hương cam bergamot tươi sáng kết hợp gỗ đàn hương tạo nên phong cách thể thao đỉnh cao, phù hợp mọi hoàn cảnh.' },
+  ld10: { name:'LD10 Jazz Club',               price:'199.000 VNĐ', gender:'Nam', tagline:'Cổ điển - Trầm ấm',           desc:'Cổ điển và trầm ấm như âm nhạc jazz. Hương thuốc lá, rum và vani tạo nên dấu ấn đặc biệt – dành cho những tâm hồn yêu cái đẹp cổ điển.' },
+  ld11: { name:'LD11 Versace Eros',            price:'199.000 VNĐ', gender:'Nam', tagline:'Best Seller Nam',               desc:'Mạnh mẽ và đầy sức sống như thần tình ái Eros. Hương bạc hà tươi, hoa nhài và gỗ ấm tạo nên sức hút không thể cưỡng lại.' },
+  ld12: { name:'LD12 Light Blue Intense',      price:'199.000 VNĐ', gender:'Nam', tagline:'Mát lạnh mùa hè',              desc:'Tươi mát như bầu trời mùa hè. Hương chanh vàng, táo và hoa nhài gợi lên cảm giác nhẹ nhàng, bay bổng – lý tưởng cho ngày nắng.' },
+  ld13: { name:'LD13 YSL Y EDP',              price:'199.000 VNĐ', gender:'Nam', tagline:'Thanh mát - Cuốn hút',          desc:'Thanh mát và cuốn hút. Sự kết hợp hoàn hảo giữa hương gỗ, gừng tươi và hoa nhài tạo nên cá tính mạnh mẽ, sang trọng.' },
+  ld14: { name:'LD14 Bombshell',               price:'199.000 VNĐ', gender:'Nữ', tagline:'Trẻ trung - Đáng yêu',         desc:'Trẻ trung và đáng yêu. Hương hoa anh đào, mộc lan hòa quyện xạ hương nhẹ nhàng tạo nên vẻ nữ tính rực rỡ, tươi tắn.' },
+  ld15: { name:'LD15 Gucci Flora',             price:'199.000 VNĐ', gender:'Nữ', tagline:'Nữ tính - Dịu dàng',           desc:'Dịu dàng và nữ tính như vườn hoa tươi. Hương hoa mẫu đơn và hoa nhài tinh khiết tạo nên cảm giác nhẹ nhàng, thanh thoát.' },
+  ld16: { name:'LD16 Yellow Diamond',          price:'199.000 VNĐ', gender:'Nữ', tagline:'Sang trọng nhẹ nhàng',         desc:'Sang trọng và nhẹ nhàng như viên kim cương vàng. Hương hoa nhài, cam bergamot và xạ hương gỗ tinh tế, phù hợp mọi dịp.' },
+  ld17: { name:'LD17 Good Girl',               price:'199.000 VNĐ', gender:'Nữ', tagline:'Gợi cảm - Cá tính',            desc:'Gợi cảm và cá tính. Hương hoa nhài đen quyến rũ kết hợp hạt cacao ngọt ngào tạo nên cá tính đặc biệt – vừa ngọt vừa bí ẩn.' },
+  ld18: { name:'LD18 Scandal',                 price:'199.000 VNĐ', gender:'Nữ', tagline:'Quyến rũ - Táo bạo',           desc:'Táo bạo và quyến rũ. Hương mật ong, gỗ patchouli và hoa cam tạo nên cá tính mạnh mẽ, không thể nhầm lẫn.' },
+  ld19: { name:'LD19 Narciso Cristal',         price:'199.000 VNĐ', gender:'Nữ', tagline:'Cuốn hút - Thanh lịch',        desc:'Cuốn hút và thanh lịch. Hương xạ hương tinh khiết kết hợp hoa nhài trắng tạo nên vẻ sang trọng, tinh tế khó quên.' },
+  ld20: { name:'LD20 Cinema',                  price:'199.000 VNĐ', gender:'Nữ', tagline:'Cổ điển - Kiêu kỳ',            desc:'Cổ điển và kiêu kỳ như ngôi sao điện ảnh. Hương hoa cam và gỗ đàn hương sang trọng tạo nên sức hút huyền bí.' },
+  ld21: { name:'LD21 My Burberry',             price:'199.000 VNĐ', gender:'Nữ', tagline:'Trong trẻo - Tươi mới',        desc:'Trong trẻo và tươi mới như buổi sáng sớm. Hương hoa mẫu đơn, táo xanh và gỗ nhẹ nhàng gợi lên vẻ đẹp thuần khiết.' },
+  ld22: { name:'LD22 Chanel No.5',             price:'199.000 VNĐ', gender:'Nữ', tagline:'Huyền thoại - Sang trọng',     desc:'Huyền thoại và đẳng cấp vượt thời gian. Hương hoa nhài và hoa hồng sang trọng – biểu tượng của người phụ nữ Pháp quyến rũ.' },
+  ld23: { name:'LD23 Dior Jadore',             price:'199.000 VNĐ', gender:'Nữ', tagline:'Kiêu sa - Tôn vinh',           desc:'Kiêu sa và tôn vinh vẻ đẹp người phụ nữ. Hương hoa ylang và hoa nhài sang trọng – lời tuyên ngôn của sự tự tin.' },
+  ld24: { name:'LD24 Tom Ford Rose Prick',     price:'220.000 VNĐ', gender:'Nữ', tagline:'Kiêu kỳ - Quyến rũ',           desc:'Kiêu kỳ và độc đáo. Hương hoa hồng damask kết hợp gia vị cay nồng tạo nên sức cuốn hút bí ẩn, đẳng cấp.' },
+  ld25: { name:'LD25 La Vie Est Belle',        price:'199.000 VNĐ', gender:'Nữ', tagline:'Best Seller Nữ',                desc:'La Vie Est Belle – Cuộc sống thật tươi đẹp! Hương iris phấn nhẹ nhàng và praline ngọt ngào hòa quyện tạo nên niềm vui sống rực rỡ.' },
+  ld26: { name:'LD26 Chloe Love',              price:'199.000 VNĐ', gender:'Nữ', tagline:'Thuần khiết - Nhẹ nhàng',      desc:'Thuần khiết và nhẹ nhàng. Hương hoa hồng tươi mát kết hợp gỗ đàn hương trắng tạo nên vẻ đẹp nữ tính mộc mạc.' },
+  ld27: { name:'LD27 Versace Bright Crystal',  price:'199.000 VNĐ', gender:'Nữ', tagline:'Ngọt ngào - Trong trẻo',       desc:'Ngọt ngào và trong trẻo như pha lê sáng. Hương thạch lựu tươi và hoa mộc lan nhẹ nhàng, dễ chịu cho cả ngày dài.' },
+  ld28: { name:'LD28 Creed Wind Flowers',      price:'220.000 VNĐ', gender:'Nữ', tagline:'Quý phái - Gió xuân',          desc:'Quý phái như làn gió xuân. Hương hoa nhài trắng tinh khiết đến từ thương hiệu nước hoa hoàng gia, sang trọng và đẳng cấp.' },
+  ld29: { name:'LD29 Gucci Bloom',             price:'199.000 VNĐ', gender:'Nữ', tagline:'Vườn hoa huệ trắng',           desc:'Vườn hoa huệ trắng rực rỡ. Hương hoa nhài, tuberose quyện lẫn rễ orris tạo nên mùi hương nồng nàn và đặc biệt.' },
+  ld30: { name:'LD30 Le Labo Rose 31',         price:'220.000 VNĐ', gender:'Nữ', tagline:'Gỗ và Hoa hồng mộc mạc',      desc:'Hoa hồng và gỗ mộc mạc hòa quyện tinh tế. Dành cho những tâm hồn yêu thiên nhiên và trân trọng vẻ đẹp giản dị đích thực.' },
+  ld31: { name:'LD31 Jo Malone English Pear',  price:'199.000 VNĐ', gender:'Nữ', tagline:'Thanh mát - Quả lê đầu thu',  desc:'Thanh mát và tươi mới như trái lê đầu thu xứ Anh. Hương quả lê xanh kết hợp freesia tinh tế, nhẹ nhàng mà sang trọng.' },
+  ld32: { name:'LD32 Coco Mademoiselle',       price:'220.000 VNĐ', gender:'Nữ', tagline:'Quý cô nước Pháp',             desc:'Tinh tế như quý cô người Pháp. Hương cam bergamot tươi, hoa hồng và patchouli ấm áp tạo nên dấu ấn thời gian không phai.' },
+  ld33: { name:'LD33 Black Opium',             price:'220.000 VNĐ', gender:'Nữ', tagline:'Ma mị - Quyến rũ',             desc:'Ma mị và quyến rũ đến khó cưỡng. Cà phê đen, hoa nhài trắng và vanilla tạo nên sức hút bí ẩn, đặc biệt cho đêm tối.' },
+  ld34: { name:'LD34 Le Labo Santal 33',       price:'220.000 VNĐ', gender:'Nữ', tagline:'Mộc mạc - Đẳng cấp',          desc:'Gỗ đàn hương mộc mạc và đẳng cấp. Sự kết hợp độc đáo giữa da thuộc và hương gỗ ấm áp tạo nên cá tính riêng không thể trộn lẫn.' },
+  ld35: { name:'LD35 Baccarat Rouge 540',      price:'220.000 VNĐ', gender:'Nữ', tagline:'Best Seller Nữ',                desc:'Đỉnh cao của xa xỉ. Hương hoa nhài và ambroxan vàng đặc trưng tạo nên mùi hương sang trọng, lưu lại dài lâu trong ký ức người gặp.' },
+  ld36: { name:'LD36 Another 13',              price:'220.000 VNĐ', gender:'Nữ', tagline:'Đẳng cấp - Tinh tế',           desc:'Đẳng cấp và tinh tế. Hương ambroxan kết hợp Iso E Super tạo nên cảm giác hoàn toàn mới lạ, huyền bí và đẳng cấp.' }
+};
+
+// ============================================================
+// TẢI THÔNG TIN SẢN PHẨM THEO URL PARAM
+// ============================================================
+function loadProduct() {
+  const params = new URLSearchParams(window.location.search);
+  const id = (params.get('id') || 'ld05').toLowerCase();
+  const p = products[id];
+
+  if (!p) {
+    document.getElementById('heroTitle').textContent = 'Sản phẩm không tồn tại';
+    return;
+  }
+
+  // Cập nhật title tab
+  document.title = p.name + ' | Tiechs Store';
+
+  // Hero
+  document.getElementById('heroTitle').textContent   = p.name.toUpperCase();
+  document.getElementById('heroTagline').textContent  = p.tagline;
+
+  // Thông tin
+  document.getElementById('productName').textContent   = p.name;
+  document.getElementById('productPrice').textContent  = p.price;
+  document.getElementById('productDesc').textContent   = p.desc;
+  document.getElementById('productCode').textContent   = id.toUpperCase();
+  document.getElementById('productGender').textContent = p.gender;
+  document.getElementById('orderProduct').value        = p.name;
+
+  // Ảnh sản phẩm
+  const imgEl = document.getElementById('productImg');
+  imgEl.src = '../assets/images/' + id + '.jpg';
+  imgEl.alt = p.name;
+
+  // Sản phẩm liên quan (3 sản phẩm ngẫu nhiên khác)
+  const keys = Object.keys(products).filter(k => k !== id);
+  const related = keys.sort(() => Math.random() - 0.5).slice(0, 3);
+  const container = document.getElementById('relatedProducts');
+  container.innerHTML = related.map(k => `
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="../assets/images/${k}.jpg" class="card-img-top" alt="${products[k].name}" style="object-fit:cover;height:220px;">
+        <div class="card-body text-center d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="fw-bold fs-6 mb-1">${products[k].name}</h5>
+            <p class="text-muted small mb-2">${products[k].tagline}</p>
+          </div>
+          <div>
+            <p class="text-danger fw-bold mb-3">${products[k].price}</p>
+            <a href="chi-tiet.html?id=${k}" class="btn btn-dark w-100 btn-sm">Xem Chi Tiết</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+loadProduct();
+</script>
 
 </body>
 </html>

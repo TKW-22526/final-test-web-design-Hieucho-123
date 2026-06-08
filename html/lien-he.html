@@ -2,178 +2,117 @@
 <html lang="vi">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Liên Hệ | Tiechs Store</title>
-
+<!-- BUG FIX: Thêm Bootstrap CSS (bị thiếu hoàn toàn) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
 
-<header>
+<!-- BUG FIX: Thay header/nav cũ bằng Bootstrap navbar đồng bộ với các trang khác -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow">
+<div class="container">
 
-    <div class="logo">
+    <a class="navbar-brand fw-bold text-warning" href="../index.html">TIECHS STORE</a>
 
-        <h1>TIECHS STORE</h1>
+    <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <p>Đại lý LD Perfume Oil</p>
-
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Trang Chủ</a></li>
+            <li class="nav-item"><a class="nav-link" href="gioi-thieu.html">Giới Thiệu</a></li>
+            <li class="nav-item"><a class="nav-link" href="san-pham.html">Sản Phẩm</a></li>
+            <li class="nav-item"><a class="nav-link active text-warning" href="lien-he.html">Liên Hệ</a></li>
+        </ul>
     </div>
 
-    <nav>
+</div>
+</nav>
 
-        <ul>
-
-            <li><a href="../index.html">Trang Chủ</a></li>
-
-            <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
-
-            <li><a href="san-pham.html">Sản Phẩm</a></li>
-
-            <li><a href="lien-he.html">Liên Hệ</a></li>
-
-        </ul>
-
-    </nav>
-
-</header>
-
-<section class="page-banner">
-
+<!-- BANNER -->
+<section class="page-banner" style="margin-top: 56px;">
     <h1>LIÊN HỆ TIECHS STORE</h1>
-
-    <p>
-
-        Luôn sẵn sàng hỗ trợ và tư vấn mùi hương phù hợp nhất
-
-    </p>
-
+    <p>Luôn sẵn sàng hỗ trợ và tư vấn mùi hương phù hợp nhất</p>
 </section>
 
+<!-- CONTACT GRID -->
 <section class="contact-container">
 
     <div class="contact-info">
-
         <h2>Thông Tin Liên Hệ</h2>
 
         <div class="contact-box">
-
             <h3>👤 Chủ Đại Lý</h3>
-
             <p>Dương Thành Hiếu</p>
-
         </div>
 
         <div class="contact-box">
-
             <h3>📞 Số Điện Thoại</h3>
-
             <p>0337205206</p>
-
         </div>
 
         <div class="contact-box">
-
             <h3>📧 Email</h3>
-
             <p>hdhieu544@gmail.com</p>
-
         </div>
 
         <div class="contact-box">
-
             <h3>🌐 Facebook</h3>
-
-            <a href="#">
-                Link Facebook Của Bạn
-            </a>
-
+            <a href="#">Link Facebook Của Bạn</a>
         </div>
-
     </div>
 
     <div class="contact-form">
-
         <h2>Gửi Tin Nhắn</h2>
 
         <form id="contactForm">
 
-            <input
-            type="text"
-            placeholder="Họ và tên"
-            required>
+            <input type="text" placeholder="Họ và tên" required>
 
-            <input
-            type="email"
-            placeholder="Email"
-            required>
+            <input type="email" placeholder="Email" required>
 
-            <input
-            type="tel"
-            placeholder="Số điện thoại"
-            required>
+            <input type="tel" placeholder="Số điện thoại" required>
 
-            <textarea
-            rows="6"
-            placeholder="Nội dung cần tư vấn"></textarea>
+            <textarea rows="6" placeholder="Nội dung cần tư vấn"></textarea>
 
-            <button type="submit">
-
-                GỬI LIÊN HỆ
-
-            </button>
+            <button type="submit">GỬI LIÊN HỆ</button>
 
         </form>
-
     </div>
 
 </section>
 
+<!-- BẢN ĐỒ -->
 <section class="map-section">
-
     <h2>Vị Trí Đại Lý</h2>
-
     <iframe
-    src="https://maps.google.com/maps?q=Tra%20Vinh&t=&z=13&ie=UTF8&iwloc=&output=embed"
-    width="100%"
-    height="450"
-    style="border:0;">
+        src="https://maps.google.com/maps?q=Tra%20Vinh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="450"
+        style="border:0; border-radius: 15px;">
     </iframe>
-
 </section>
 
-<footer>
-
-    <div class="footer-grid">
-
-        <div>
-
-            <h3>TIECHS STORE</h3>
-
-            <p>Đại lý LD Perfume Oil chính hãng</p>
-
-        </div>
-
-        <div>
-
-            <h3>Liên Hệ</h3>
-
-            <p>📞 0337205206</p>
-
-            <p>📧 hdhieu544@gmail.com</p>
-
-        </div>
-
+<!-- FOOTER (Bootstrap - đồng bộ với các trang khác) -->
+<footer class="bg-dark text-secondary py-4 text-center border-top border-secondary">
+    <div class="container">
+        <h4 class="text-warning">TIECHS STORE</h4>
+        <p class="mb-1 text-white">Đại lý LD Perfume Oil chính hãng</p>
+        <p class="small mb-1">📞 0337205206</p>
+        <p class="small mb-0">📧 hdhieu544@gmail.com</p>
+        <p class="small mt-2">&copy; 2026 Dương Thành Hiếu</p>
     </div>
-
 </footer>
 
+<!-- BUG FIX: Thêm Bootstrap JS (bị thiếu) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../js/script.js"></script>
 
 </body>
-
 </html>
