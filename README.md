@@ -175,10 +175,10 @@ Sinh viên cần nộp đầy đủ các nội dung sau:
 Sinh viên cập nhật thông tin cá nhân tại đây:
 
 ```text
-Họ và tên:
-Mã số sinh viên:
-Lớp:
-Tên đề tài:
-Liên kết GitHub repository:
-Liên kết GitHub Pages:
+Họ và tên: Dương Thành Hiếu
+Mã số sinh viên:110124063
+Lớp:DA24TTC
+Tên đề tài: Xây dựng Website Bán Nước Hoa LD Perfume Oil cho Tiechs Store
+Liên kết GitHub repository:https://github.com/TKW-22526/final-test-web-design-Hieucho-123.git
+Liên kết GitHub Pages:https://tkw-22526.github.io/final-test-web-design-Hieucho-123/
 ```
